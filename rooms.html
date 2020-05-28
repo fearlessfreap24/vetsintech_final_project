@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rooms</title>
+    <link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<!-- stylesheet for rooms.html -->
+<link rel="stylesheet" href="/static/css/rooms.css">
+
+    <!-- stylesheet for base.html -->
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="navitems">
+                <!-- A grey horizontal navbar that becomes vertical on small screens -->
+                <nav class="navbar navbar-expand-sm navbar-custom">
+                    <!--Links -->
+                    <ul class="navbar-nav">
+                        
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Home</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/lights.html">Lights</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/special.html">Special Functions</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/rooms.html">Rooms</a>
+                        </li>
+                        
+                        
+                    </ul>
+                </nav>
+            </div>
+            <div class="hofwb">
+                House of Five White Bricks
+            </div>
+        </div>
+    </header>
+<article>
+    <div id="article">
+        
+<div class="container-fluid">
+    <!-- <a href="roomform"> -->
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>On / Off</th>
+                <th>Brightness</th>
+            </tr>
+        </thead>        
+        <tbody>
+            
+            <tr>
+                <td>
+                    <img src="/static/images/room1.jpg" alt="Living Room" width="150px">
+                </td>
+                <td>
+                    <label class="switch">
+                        
+                        <input type="checkbox" id="room1" onclick="roomonoff('1')">
+                        
+                        <span class="slider round"></span>                         
+                    </label>
+                </td>
+                <td>
+                    <div class="slidebarcontainer">
+                        <input type="range" min="1" max="255" value="254" class="sliderbar" id="room1">
+                    </div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <img src="/static/images/room2.jpg" alt="Master Bedroom" width="150px">
+                </td>
+                <td>
+                    <label class="switch">
+                        
+                        <input type="checkbox" id="room2" onclick="roomonoff('2')">
+                        
+                        <span class="slider round"></span>                         
+                    </label>
+                </td>
+                <td>
+                    <div class="slidebarcontainer">
+                        <input type="range" min="1" max="255" value="254" class="sliderbar" id="room2">
+                    </div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <img src="/static/images/room3.jpg" alt="Paige Office" width="150px">
+                </td>
+                <td>
+                    <label class="switch">
+                        
+                        <input type="checkbox" id="room3" onclick="roomonoff('3')">
+                        
+                        <span class="slider round"></span>                         
+                    </label>
+                </td>
+                <td>
+                    <div class="slidebarcontainer">
+                        <input type="range" min="1" max="255" value="254" class="sliderbar" id="room3">
+                    </div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <img src="/static/images/room4.jpg" alt="Dylan Office" width="150px">
+                </td>
+                <td>
+                    <label class="switch">
+                        
+                        <input type="checkbox" id="room4" onclick="roomonoff('4')" checked='True'>
+                        
+                        <span class="slider round"></span>                         
+                    </label>
+                </td>
+                <td>
+                    <div class="slidebarcontainer">
+                        <input type="range" min="1" max="255" value="254" class="sliderbar" id="room4">
+                    </div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <img src="/static/images/room5.jpg" alt="Hallway" width="150px">
+                </td>
+                <td>
+                    <label class="switch">
+                        
+                        <input type="checkbox" id="room5" onclick="roomonoff('5')" checked='True'>
+                        
+                        <span class="slider round"></span>                         
+                    </label>
+                </td>
+                <td>
+                    <div class="slidebarcontainer">
+                        <input type="range" min="1" max="255" value="77" class="sliderbar" id="room5">
+                    </div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <img src="/static/images/room6.jpg" alt="Front door" width="150px">
+                </td>
+                <td>
+                    <label class="switch">
+                        
+                        <input type="checkbox" id="room6" onclick="roomonoff('6')" checked='True'>
+                        
+                        <span class="slider round"></span>                         
+                    </label>
+                </td>
+                <td>
+                    <div class="slidebarcontainer">
+                        <input type="range" min="1" max="255" value="254" class="sliderbar" id="room6">
+                    </div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <img src="/static/images/room7.jpg" alt="Driveway" width="150px">
+                </td>
+                <td>
+                    <label class="switch">
+                        
+                        <input type="checkbox" id="room7" onclick="roomonoff('7')" checked='True'>
+                        
+                        <span class="slider round"></span>                         
+                    </label>
+                </td>
+                <td>
+                    <div class="slidebarcontainer">
+                        <input type="range" min="1" max="255" value="254" class="sliderbar" id="room7">
+                    </div>
+                </td>
+            </tr>
+            
+        </tbody>        
+    </table>
+    <!-- </a> -->
+</div>
+
+    </div>
+</article>
+<footer>
+    <div class="footer">
+        Created By Dylan Perez
+    </div>
+</footer>
+
+<script src="/static/js/rooms.js"></script>
+
+</body>
+</html>

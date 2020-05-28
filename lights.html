@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lights</title>
+    <link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<!-- stylesheet for lights.html -->
+<link rel="stylesheet" href="/static/css/lights.css">
+
+    <!-- stylesheet for base.html -->
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="navitems">
+                <!-- A grey horizontal navbar that becomes vertical on small screens -->
+                <nav class="navbar navbar-expand-sm navbar-custom">
+                    <!--Links -->
+                    <ul class="navbar-nav">
+                        
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Home</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/lights.html">Lights</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/special.html">Special Functions</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/rooms.html">Rooms</a>
+                        </li>
+                        
+                        
+                    </ul>
+                </nav>
+            </div>
+            <div class="hofwb">
+                House of Five White Bricks
+            </div>
+        </div>
+    </header>
+<article>
+    <div id="article">
+        
+<div class="container-fluid">
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Number</th>
+            <th>Name</th>
+            <th>State</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr>
+            <td><img class="lightpictures" src="/static/images/light1small.jpg" alt="Dylan Bed" width="75px"></td>
+            <td>Dylan Bed</td>
+            <td>
+                <label class="switch">
+                    
+                    <input type="checkbox" id="light1" onclick="output('1')">
+                    
+                    <span class="slider round"></span>                
+                </label>
+            </td>
+        </tr>
+        
+        <tr>
+            <td><img class="lightpictures" src="/static/images/light3small.jpg" alt="LR Leopard" width="75px"></td>
+            <td>LR Leopard</td>
+            <td>
+                <label class="switch">
+                    
+                    <input type="checkbox" id="light3" onclick="output('3')" checked="True">
+                    
+                    <span class="slider round"></span>                
+                </label>
+            </td>
+        </tr>
+        
+        <tr>
+            <td><img class="lightpictures" src="/static/images/light4small.jpg" alt="LR BlueWhite" width="75px"></td>
+            <td>LR BlueWhite</td>
+            <td>
+                <label class="switch">
+                    
+                    <input type="checkbox" id="light4" onclick="output('4')">
+                    
+                    <span class="slider round"></span>                
+                </label>
+            </td>
+        </tr>
+        
+        <tr>
+            <td><img class="lightpictures" src="/static/images/light5small.jpg" alt="Dylan Office" width="75px"></td>
+            <td>Dylan Office</td>
+            <td>
+                <label class="switch">
+                    
+                    <input type="checkbox" id="light5" onclick="output('5')" checked="True">
+                    
+                    <span class="slider round"></span>                
+                </label>
+            </td>
+        </tr>
+        
+        <tr>
+            <td><img class="lightpictures" src="/static/images/light6small.jpg" alt="HALL Left" width="75px"></td>
+            <td>HALL Left</td>
+            <td>
+                <label class="switch">
+                    
+                    <input type="checkbox" id="light6" onclick="output('6')" checked="True">
+                    
+                    <span class="slider round"></span>                
+                </label>
+            </td>
+        </tr>
+        
+        <tr>
+            <td><img class="lightpictures" src="/static/images/light7small.jpg" alt="Paige Office" width="75px"></td>
+            <td>Paige Office</td>
+            <td>
+                <label class="switch">
+                    
+                    <input type="checkbox" id="light7" onclick="output('7')">
+                    
+                    <span class="slider round"></span>                
+                </label>
+            </td>
+        </tr>
+        
+        <tr>
+            <td><img class="lightpictures" src="/static/images/light8small.jpg" alt="HALL Right" width="75px"></td>
+            <td>HALL Right</td>
+            <td>
+                <label class="switch">
+                    
+                    <input type="checkbox" id="light8" onclick="output('8')" checked="True">
+                    
+                    <span class="slider round"></span>                
+                </label>
+            </td>
+        </tr>
+        
+        <tr>
+            <td><img class="lightpictures" src="/static/images/light9small.jpg" alt="FRONT Porch" width="75px"></td>
+            <td>FRONT Porch</td>
+            <td>
+                <label class="switch">
+                    
+                    <input type="checkbox" id="light9" onclick="output('9')" checked="True">
+                    
+                    <span class="slider round"></span>                
+                </label>
+            </td>
+        </tr>
+        
+        <tr>
+            <td><img class="lightpictures" src="/static/images/light10small.jpg" alt="GAR Left" width="75px"></td>
+            <td>GAR Left</td>
+            <td>
+                <label class="switch">
+                    
+                    <input type="checkbox" id="light10" onclick="output('10')" checked="True">
+                    
+                    <span class="slider round"></span>                
+                </label>
+            </td>
+        </tr>
+        
+        <tr>
+            <td><img class="lightpictures" src="/static/images/light11small.jpg" alt="GAR Right" width="75px"></td>
+            <td>GAR Right</td>
+            <td>
+                <label class="switch">
+                    
+                    <input type="checkbox" id="light11" onclick="output('11')" checked="True">
+                    
+                    <span class="slider round"></span>                
+                </label>
+            </td>
+        </tr>
+        
+        <tr>
+            <td><img class="lightpictures" src="/static/images/light12small.jpg" alt="Paige Bed" width="75px"></td>
+            <td>Paige Bed</td>
+            <td>
+                <label class="switch">
+                    
+                    <input type="checkbox" id="light12" onclick="output('12')">
+                    
+                    <span class="slider round"></span>                
+                </label>
+            </td>
+        </tr>
+        
+        <tr>
+            <td><img class="lightpictures" src="/static/images/light13small.jpg" alt="Paige Desk" width="75px"></td>
+            <td>Paige Desk</td>
+            <td>
+                <label class="switch">
+                    
+                    <input type="checkbox" id="light13" onclick="output('13')">
+                    
+                    <span class="slider round"></span>                
+                </label>
+            </td>
+        </tr>
+        
+    </tbody>
+    
+</table>
+</div>
+
+    </div>
+</article>
+<footer>
+    <div class="footer">
+        Created By Dylan Perez
+    </div>
+</footer>
+
+<script src="/static/js/lights.js"></script>
+
+</body>
+</html>
